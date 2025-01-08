@@ -1,10 +1,11 @@
+import Gallery from "./Components/Gallery"
 
 function App() {
 
   return (
     <>
       <div className=''>
-        TEMA
+        <Gallery/>
        </div>
     </>
   )
