@@ -1,13 +1,14 @@
-import Gallery from "./Components/Gallery"
+
+import Home from "./Pages/Home"
 
 function App() {
 
   return (
-    <>
-      <div className=''>
-        <Gallery/>
+    <div>
+      <div className='bg-slate-50'>
+          <Home />
        </div>
-    </>
+    </div>
   )
 }
 

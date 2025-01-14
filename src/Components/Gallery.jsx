@@ -1,6 +1,5 @@
 import {useState} from 'react'
 
-
 const images = [
     {
       url: "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba",
@@ -29,23 +28,19 @@ const images = [
   ];
 const Gallery = () => {
 
-    const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openLightbox = (index) => {
-    console.log(index);
     setSelectedImage(index);
   };
-
   const closeLightbox = () => {
     setSelectedImage(null);
   };
-
   const nextImage = () => {
     if (selectedImage !== null) {
       setSelectedImage((selectedImage + 1) % images.length);
     }
   };
-
   const previousImage = () => {
     if (selectedImage !== null) {
       setSelectedImage((selectedImage - 1 + images.length) % images.length);
